@@ -44,4 +44,57 @@
 | Support both static data and data coming from an API |
 
 ---
+## Searchbox componet architecture:
+
+![component](/imges/component-Arc.jpg "component")
+
+### Show more results is a return call from the API and you can present it as a scroll, pagination and maybe limit the results to a set number.
+
+## API for Searchbox Suggestion:
+
+![component](/imges/api.jpg "api component")
+
+
+```js
+getSuggesion(searchQuery, numberOfResults)
+
+type Suggestions: Array<Suggesion>;
+
+type Suggesion = {
+  id: string;
+  text: string;
+  imgUrl?: string;
+}
+
+```
+
+---
+
+## How the consumer will use to consume the data from the widget:
+
+ __Examples of props to be used with <Autocomplete /> component__
+ 
+```js
+
+<Autocomplete
+  queryFn: (query) => data[]
+  minResultNumber: Number
+  maxResultNumber: Number
+  loadingState: string | JSX.Element
+  onLoad: Promise<void>
+  onClose: () => void
+  onClear: => void;
+  onESCKey = () => void
+  onChange = (e: Event) => setState(e.target.value) 
+  debounce: () => void;
+  showMoreResults: () => void;
+/>
+```
+
+
+
+
+
+
+
 
