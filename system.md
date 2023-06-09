@@ -91,7 +91,11 @@ type Suggesion = {
 />
 ```
 
+### Data flow from backend to frontend
 
+ - how data is connected from backend and consumed by the front end app?
+ - what kind of packages you may want to consider at the front end?
+ - 
 
 
 
