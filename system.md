@@ -10,7 +10,7 @@
 
 ---
 
-#### Clearify the question: 
+#### Clarify the question: 
 1. What is the goal of this feature?
 2. Who do you building this for?
 3. Do you want a generic component?
